@@ -1,0 +1,39 @@
+.preview-key {
+    color: #a0a0a0;
+}
+
+.desc {
+    color: #a0a0a0;
+}
+
+.bigint {
+    color: #b0b0b0
+}
+
+.string, .regexp, .symbol {
+    color: #61caff;
+}
+
+.number, .boolean {
+    color: #9783f7;
+}
+
+.undefined, .null {
+    color: #868686;
+}
+
+.keyword {
+    color: #ff8b1c;
+}
+
+.element-tagName {
+    color: #659fff;
+}
+
+.element-className {
+    color: #a6d2ff;
+}
+
+.element-id {
+    color: #ff8f26;
+}

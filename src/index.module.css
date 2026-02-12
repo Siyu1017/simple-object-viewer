@@ -1,0 +1,94 @@
+.container {
+    --bg: rgb(30, 30, 30);
+    --color: rgb(227, 227, 227);
+    --hover-bg: #33373f;
+    --key-color: #8eacf2;
+    --expand-icon: url("data:image/svg+xml;charset=utf-8,%3Csvg width=%2714%27 height=%2714%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M10.5 6.65 4.9 2.8v7.7%27 fill=%27%23000%27/%3E%3C/svg%3E");
+    background: var(--bg);
+    color: var(--color);
+    width: inherit;
+    height: inherit;
+    display: block;
+    cursor: default;
+    overflow: auto;
+}
+
+.container *::selection {
+    background: #b8c6ff;
+    color: #000;
+}
+
+.container,
+.container * {
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 100%;
+}
+
+.rows {
+    position: relative;
+    width: inherit;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: inherit;
+}
+
+.row.getter .row-preview:hover {
+    text-decoration: underline;
+}
+
+.row-indent {
+    display: block;
+    height: inherit;
+    background-image: linear-gradient(to right, transparent 9px, #727272 9px, #727272 10px, transparent 10px);
+    background-size: 16px;
+}
+
+.row-content {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    border-radius: .25rem;
+    padding: 0 .125rem 0;
+}
+
+.row-content:hover {
+    background: var(--hover-bg);
+}
+
+.row-expand {
+    height: 14px;
+    mask-size: auto;
+    min-height: 14px;
+    min-width: 14px;
+    transition: transform .1s ease-in-out;
+    width: 14px;
+}
+
+.row-expand.visible {
+    background-color: currentColor;
+    mask-image: var(--expand-icon);
+}
+
+.row-expand.visible.expanded {
+    transform: rotate(90deg);
+}
+
+.row-key {
+    color: var(--key-color);
+    font-weight: bolder;
+    white-space: nowrap;
+}
+
+.row-colon {
+    white-space: pre;
+}
+
+.row-preview {
+    white-space: nowrap;
+}
