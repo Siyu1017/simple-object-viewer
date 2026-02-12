@@ -1,5 +1,10 @@
 # Simple Object Viewer
 
+![npm version](https://img.shields.io/npm/v/simple-object-viewer)
+![npm downloads](https://img.shields.io/npm/dm/simple-object-viewer)
+![license](https://img.shields.io/npm/l/simple-object-viewer)
+![npm bundle size](https://img.shields.io/bundlephobia/min/simple-object-viewer)
+
 A simple viewer for JavaScript objects.
 
 It renders objects in a clean, expandable tree view.
