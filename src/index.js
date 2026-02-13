@@ -360,6 +360,8 @@ class NodeManager {
         }
 
         node.collapse = () => {
+            const visibleSize = node.visibleSize;
+
             if (node.valueGetter) {
                 this.removeChildren(node);
                 node.childrenLoaded = false;
@@ -383,7 +385,7 @@ class NodeManager {
             }
 
             node.expanded = false;
-            node.parent?.decreaseVisibleSize(node.visibleSize - 1);
+            node.parent?.decreaseVisibleSize(visibleSize - 1);
             node.visibleSize = 1;
 
             this.visibleNodes = [];

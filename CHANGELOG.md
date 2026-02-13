@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed incorrect `visibleSize` calculation after collapsing getter nodes.
+
 ## [1.0.0] - 2026-02-12
 
 ### Added
