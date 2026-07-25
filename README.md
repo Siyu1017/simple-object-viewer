@@ -1,5 +1,8 @@
 # Simple Object Viewer
 
+> [!WARNING]
+> This project has been deprecated and replaced by [Object Inspector](https://github.com/Siyu1017/object-inspector).
+
 ![npm version](https://img.shields.io/npm/v/simple-object-viewer)
 ![npm downloads](https://img.shields.io/npm/dm/simple-object-viewer)
 ![license](https://img.shields.io/npm/l/simple-object-viewer)
